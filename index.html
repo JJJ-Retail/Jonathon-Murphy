@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonathon Murphy | Energy Systems Engineer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #001f33;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #00334d;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      padding: 2rem 5%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      padding: 0.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .content {
+      display: none;
+      padding: 1rem;
+      background: #fff;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+    }
+    footer {
+      background: #001f33;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    a { color: #004466; }
+    /* Section colours - bolder */
+    #about { background: #facc15; }      /* Bold Yellow */
+    #education { background: #38bdf8; }  /* Bold Sky Blue */
+    #experience { background: #4ade80; } /* Bold Green */
+    #skills { background: #a78bfa; }     /* Bold Purple */
+    #projects { background: #fb7185; }   /* Bold Rose */
+    #thesis { background: #34d399; }     /* Bold Emerald */
+    #interests { background: #c084fc; }  /* Bold Violet */
+
+    /* Highlight effect */
+    .highlight {
+      background: #fffbeb !important;
+      transition: background 1s ease;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jonathon Murphy</h1>
+  <p>Energy Systems Engineer | Renewable Energy | Gravity Energy Storage</p>
+  <p>
+    <a href="#" onclick="showPopup('Email: 1jonomurphy@gmail.com')" style="color:white;">Email</a> | 
+    <a href="#" onclick="showPopup('LinkedIn: www.linkedin.com/in/jonathon-murphy-lkinpro')" style="color:white;">LinkedIn</a>
+  </p>
+</header>
+
+<nav>
+  <a onclick="scrollToSection('about')">About</a>
+  <a onclick="scrollToSection('education')">Education</a>
+  <a onclick="scrollToSection('experience')">Experience</a>
+  <a onclick="scrollToSection('skills')">Skills</a>
+  <a onclick="scrollToSection('projects')">Key Projects</a>
+  <a onclick="scrollToSection('thesis')">Thesis</a>
+  <a onclick="scrollToSection('interests')">Interests</a>
+</nav>
+
+<section id="about">
+  <h2 onclick="toggle(this)">About Me</h2>
+  <div class="content">
+    <p>I am a forward-thinking and positive Energy Systems Engineer, motivated to develop solutions that push the boundaries of renewable energy. With strong academic training and diverse professional experience, I bring creativity, technical depth, and an optimistic outlook to every challenge I take on.</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2 onclick="toggle(this)">Education</h2>
+  <div class="content">
+    <h3>Postgraduate: MSc Energy Systems Engineering</h3>
+    <p><a href="https://www.universityofgalway.ie/courses/taught-postgraduate-courses/energy-systems-engineering.html#course_overview">University of Galway</a> | Result: 1:1<br>
+    Thesis achieved 1:1: <em>Design and Development of an Electromagnetic Gravity Energy Storage System</em></p>
+    <details>
+      <summary>Masters Modules</summary>
+      <ul>
+        <li>Financial Management</li>
+        <li>Smart Grid</li>
+        <li>Systems Modelling & Simulation</li>
+        <li>Power Systems</li>
+        <li>Advanced Energy Systems Engineering</li>
+        <li>Green Hydrogen Technology</li>
+        <li>Design and Analysis</li>
+        <li>Global Change</li>
+        <li>Research Methods</li>
+      </ul>
+    </details>
+
+    <h3>Undergraduate: BSc Energy Systems Engineering</h3>
+    <p><a href="https://www.universityofgalway.ie/courses/undergraduate-courses/energy-systems-engineering.html">University of Galway</a> | Result: 2:1</p>
+    <details>
+      <summary>Undergrad Modules by Year</summary>
+      <ul>
+        <li><strong>Year 1:</strong> Fundamentals of Engineering, Graphics, Design, Computing I & II, Chemistry, Physics, Mechanics, Calculus, Mathematical Methods</li>
+        <li><strong>Year 2:</strong> Applied Maths I & II, Statistics, Principles of Building, Theory of Machines, Thermodynamics & Fluid Mechanics, Sensors, Strength of Materials, Electrical Circuits, Modelling</li>
+        <li><strong>Year 3:</strong> Energy Systems Electrical Design, Power Electronics, Fluid Dynamics, Electromechanical Power Conversion, Sustainable Energy, Heat Transfer, Control Systems, Energy in Buildings, Turbomachines, Combustion Science, Microprocessor Systems</li>
+        <li><strong>Year 4:</strong> Waste Management, Power Systems, Python Programming, CFD, Mechanical Analysis, Energy Conversion, Project Management, Professional Skills, Industry Placement</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 onclick="toggle(this)">Professional Experience</h2>
+  <div class="content">
+    <h3>Renewable Energy Development Engineer | Power Capital Renewable Energy (Jan – Aug 2024)</h3>
+    <p>Worked on solar PV, BESS, and synchronous condenser integration. Tools: PVCase, PVSyst, QGIS.</p>
+
+    <h3>Sustainability Team Member | Metec Consulting Engineers (Summers 2022 & 2023)</h3>
+    <p>Energy modelling (IES VE), NZEB, BER compliance, Part L regulations, site visits.</p>
+
+    <h3>Other Roles</h3>
+    <p>Accounting support at James Gleeson & Co. (2018), Community Radio organiser (2018), Bray Lakers assistant (2018–2021), Qualified soccer referee (2019–2022).</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 onclick="toggle(this)">Skills & Competencies</h2>
+  <div class="content">
+    <h3>Engineering Software</h3>
+    <p>ANSYS Maxwell, IES VE, PVCase, PVSyst, QGIS, MATLAB, Python, PowerWorld, AutoCAD, Inventor.</p>
+
+    <h3>Programming</h3>
+    <p>Python, Matlab, C, C++, Arduino, basic JavaScript.</p>
+
+    <h3>Other</h3>
+    <p>First Aid, Public Speaking, Leadership, Project Management, Volunteer Coordination.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 onclick="toggle(this)">Key Projects</h2>
+  <div class="content">
+    <h3>Combustion Science and Engineering</h3>
+    <p>Studied reaction kinetics, pollutant formation, and energy conversion. Applied thermodynamics to calculate heating values, equilibrium flame temperatures, and combustion efficiency. Used simulation tools to predict real-world combustion behaviour.</p>
+
+    <h3>Microprocessor Systems Engineering</h3>
+    <p>Designed embedded systems, interfaces, and digital circuits. Built and programmed a robot for a 1v1 battle challenge using microcontrollers, showcasing teamwork and practical coding in low-level environments.</p>
+
+    <h3>Electromechanical Power Conversion</h3>
+    <p>Analysed transformers, DC machines, and AC induction motors. Created equivalent circuit models to predict machine performance. Studied power electronic converters and practical energy conversion systems.</p>
+
+    <h3>Energy Conversion</h3>
+    <p>Investigated thermodynamic cycles in power plants, combined with heat transfer and combustion analysis. Designed energy conversion systems and evaluated their technical, environmental, and socio-economic performance.</p>
+  </div>
+</section>
+
+<section id="thesis">
+  <h2 onclick="toggle(this)">Thesis</h2>
+  <div class="content">
+    <h3>Design of a Gravity Energy Storage System (2025)</h3>
+    <p>My Masters thesis explored the Electro-Magnetic Gravity Energy Storage System (EMGES), a novel concept combining electromagnetism and gravitational potential energy. A small-scale prototype was designed and tested, showing it could generate power outputs up to 18.5 W, while simulations suggested scalability to multi-kWh systems in deep shafts.</p>
+    <p>The project demonstrated both the promise and challenges of EMGES: its technical potential for renewable integration, but with efficiency and cost hurdles compared to established technologies like lithium-ion or pumped hydro. Despite these, EMGES offers a new direction in sustainable, mechanical-based energy storage research.</p>
+    <a href="Jonathon Murphy Thesis.pdf" target="_blank">Download Thesis (PDF)</a>
+  </div>
+</section>
+
+<section id="interests">
+  <h2 onclick="toggle(this)">Interests & Achievements</h2>
+  <div class="content">
+    <p>Travel, football (player, coach, referee), skiing, climbing, hiking, skydiving, water sports, rugby, cinema.</p>
+    <p>Highlights: Antarctic Circle Expedition (2018), Camino walk (110km), Bray Lions Young Ambassador Award (2020), Garda Youth Award (2019), El Capitan Yosemite (2025).</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Jonathon Murphy | Energy Systems Engineer</p>
+</footer>
+
+<script>
+  function toggle(el) {
+    const content = el.nextElementSibling;
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+  }
+
+  function showPopup(text) {
+    alert(text);
+  }
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    section.scrollIntoView({behavior: 'smooth'});
+    const header = section.querySelector("h2");
+    header.classList.add("highlight");
+    setTimeout(() => header.classList.remove("highlight"), 1000);
+  }
+</script>
+
+</body>
+</html>
